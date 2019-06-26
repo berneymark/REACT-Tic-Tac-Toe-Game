@@ -2,17 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '.\\index.css';
 
+function Square(props) {
+    return (
+        <button className="square" onClick={props.onClick}>
+            {props.value}
+        </button>
+    );
+}
+
+/* REPLACED CLASS WITH FUNCTION
+This is useful when it is needed only to render and don't hold state.
 class Square extends React.Component {
     render() {
       return (
         <button 
             className="square" 
             onClick={() => this.props.onClick()}>
+
+            *You can also see here that this line is simplified not needing parentheses or this* 
+
           {this.props.value}
         </button>
       );
     }
   }
+*/
   
   class Board extends React.Component {
     constructor(props) {
