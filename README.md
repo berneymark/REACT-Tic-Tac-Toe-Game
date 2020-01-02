@@ -1,3 +1,7 @@
+This was a practice project to learn React for the Microsoft Student Accelerator 2019
+
+=================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
